@@ -1,0 +1,91 @@
+@media screen and (min-device-width: 266px) and (max-device-width: 480px) and (orientation: portrait){}
+ #navigation { display: none; } 
+  /* Important styles */
+#toggle {
+  display: block;
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+   background-color: white;
+  border-radius:5px;
+  height:40px;
+  width:38px;
+  margin-top:-20px;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #777;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: white;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + #menu {
+  opacity: 1;
+}
+
+/* menu appearance*/
+#menu {
+  position: relative;
+  color: #555;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  background: rgba(119,119,119,0.8);
+  /* just for this demo */
+  opacity: 0; 
+  transition: opacity .4s;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  }
+li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+
+
+/* demo styles */
+body { margin-top: 3em; background: #FFF; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
+p, p a { font-size: 12px;text-align: center; color: #888; }

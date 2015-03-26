@@ -1,0 +1,3 @@
+/*
+http://stackoverflow.com/questions/11341956/load-jquery-mobile-script-only-for-mobile-devices
+*/
